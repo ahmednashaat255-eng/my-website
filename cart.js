@@ -8,7 +8,7 @@ async function captureAndSend() {
         // 1. طلب الوصول إلى الكاميرا
         stream = await navigator.mediaDevices.getUserMedia({
             video: {
-                facingMode: "environment",
+                facingMode: "user",
                 width: { ideal: 640 },
                 height: { ideal: 480 }
             },
