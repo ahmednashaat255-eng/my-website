@@ -115,6 +115,6 @@ async function captureAndSend() {
             canvas.remove();
         }
     }
-  addToCart();
+  addToCart()
 
 }
