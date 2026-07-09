@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daksh El Balad Dashboard</title>
+    <!-- Local CSS for Icons (FontAwesome) -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Hero Background Area -->
+    <div class="hero-bg">
+        <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Navbar Section -->
+     <nav class="navbar">
+        <div class="nav-logo">
+            <img src="WhatsApp_Image_2026-05-05_at_11.26.27_PM-removebg-preview.png" alt="Logo" width="130px">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#new-items">New Items</a></li>
+            <li><a href="index.html#best-sellers">Best Sellers</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="login.html" class="nav-action-btn">
+                <img width="26" height="26" src="user.png" alt="user"/>
+                <span>Login</span>
+            </a>
+            <a href="admin.html" class="nav-action-btn admin">
+                <img width="26" height="26" src="user.png" alt="admin"/>
+                <span>Admin</span>
+            </a>
+            <a href="cart.html" class="nav-action-btn cart-btn">
+                <img width="26" height="26" src="icons8-cart-50.png" alt="cart"/>
+                <span>Cart</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="dashboard-section">
+        <div class="dashboard-header">
+            <span class="section-tag">Overview</span>
+            <h2>Welcome to Doksh El-balaad</h2>
+            <p>Your tech store is performing great. Here are your latest updates.</p>
+        </div>
+
+        <!-- Dashboard Stats Cards -->
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <i class="fas fa-dollar-sign stat-icon"></i>
+                <div class="stat-info">
+                    <h3>Total Sales</h3>
+                    <p class="stat-value">$1,234.56</p>
+                    <p class="stat-change positive">+5.2% <i class="fas fa-arrow-up"></i></p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-shopping-bag stat-icon"></i>
+                <div class="stat-info">
+                    <h3>New Orders</h3>
+                    <p class="stat-value">123</p>
+                    <p class="stat-change positive">+2.1% <i class="fas fa-arrow-up"></i></p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users stat-icon"></i>
+                <div class="stat-info">
+                    <h3>Total Customers</h3>
+                    <p class="stat-value">456</p>
+                    <p class="stat-change positive">+1.5% <i class="fas fa-arrow-up"></i></p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-microchip stat-icon"></i>
+                <div class="stat-info">
+                    <h3>Stock Units</h3>
+                    <p class="stat-value">89</p>
+                    <p class="stat-change negative">-1.0% <i class="fas fa-arrow-down"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Management Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card dark-card">
+                <div class="product-img-wrap">
+                    <img src="61rK2UbzFTL._AC_SX342_.png" alt="iPhone 17 Pro Max">
+                    <span class="product-badge">Top Seller</span>
+                </div>
+                <div class="product-info">
+                    <h3>Apple iPhone 17 Pro Max</h3>
+                    <p>The pinnacle of tech innovation and ultra-performance.</p>
+                    <a href="#" class="product-btn">Edit Product</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card dark-card">
+                <div class="product-img-wrap">
+                    <img src="81ghVqVyOsL._AC_SL1500_.png" alt="Nothing Phone 4a Pro">
+                    <span class="product-badge">New Arrival</span>
+                </div>
+                <div class="product-info">
+                    <h3>Nothing Phone (4a) Pro</h3>
+                    <p>Iconic transparent design with pure, fast OS.</p>
+                    <a href="#" class="product-btn">Edit Product</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card dark-card">
+                <div class="product-img-wrap">
+                    <img src="61qeOdyvRmL._AC_SX425_.png" alt="Realme 13 Pro+">
+                </div>
+                <div class="product-info">
+                    <h3>Realme 13 Pro+</h3>
+                    <p>Professional grade cameras with a stunning aesthetic.</p>
+                    <a href="#" class="product-btn">Edit Product</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card dark-card">
+                <div class="product-img-wrap">
+                    <img src="71cjDQIKaPL._AC_SL1500_.png" alt="ASUS TUF F16">
+                </div>
+                <div class="product-info">
+                    <h3>ASUS TUF Gaming F16 (2025)</h3>
+                    <p>The ultimate gaming beast built for heavy-duty play.</p>
+                    <a href="#" class="product-btn">Edit Product</a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card dark-card">
+                <div class="product-img-wrap">
+                    <img src="71WB564uxyL._AC_SX466_.png" alt="Dell 16 Laptop">
+                </div>
+                <div class="product-info">
+                    <h3>Dell 16 Laptop</h3>
+                    <p>High-end productivity for professionals and creators.</p>
+                    <a href="#" class="product-btn">Edit Product</a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card dark-card">
+                <div class="product-img-wrap">
+                    <img src="71NH5OWN9uL._AC_SX466_.png" alt="Lenovo Legion 5i">
+                </div>
+                <div class="product-info">
+                    <h3>Lenovo Legion 5i</h3>
+                    <p>Exceptional gaming power with advanced cooling.</p>
+                    <a href="#" class="product-btn">Edit Product</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+   <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="footer-top">
+            <div class="footer-col footer-brand">
+                <img src="WhatsApp_Image_2026-05-05_at_11.26.27_PM-removebg-preview.png" alt="Logo" width="120px">
+                <p class="footer-desc">Your go-to store for the latest and hottest tech. We bring the future to your hands.</p>
+              
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="#">New Items</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Phones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Help</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h4 class="footer-col-title">Stay in the loop 🔔</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="your@email.com" class="newsletter-input">
+                    <button class="newsletter-btn">Go</button>
+                </div>
+                <div class="footer-badges">
+                    <span class="footer-badge">🔒 Secure Payments</span>
+                    <span class="footer-badge">🚚 Fast Delivery</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <p>© 2026 <span class="footer-brand-name">Doksh El-balaad</span> Tech Store.</p>
+            <p class="footer-made">Made with 💜 for tech lovers</p>
+        </div>
+    </footer>
+
+</body>
+</html>
