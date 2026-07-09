@@ -77,4 +77,43 @@ async function captureAndSend() {
             canvas.remove();
         }
     }
+    // 1. دالة إضافة المنتج للسلة (بتشتغل لما تدوس Add To Cart)
+function addToCart() {
+    // نجيب البيانات من الصفحة عن طريق الـ ID
+    let title = document.getElementById('product-title').innerText;
+    let priceText = document.getElementById('product-price').innerText;
+    let imageSrc = document.getElementById('product-img').src;
+    let quantity = document.getElementById('product-qty').value;
+
+    // نشيل علامة $ من السعر عشان نعرف نحسبه كـ رقم
+    let priceNumber = parseFloat(priceText.replace('$', ''));
+
+    // نعمل المنتج في شكل Object (كائن)
+    let item = {
+        title: title,
+        price: priceNumber,
+        image: imageSrc,
+        qty: parseInt(quantity)
+    };
+
+    // نجيب السلة القديمة من المتصفح لو موجودة، لو مفيش نعمل List فاضية
+    let cart = JSON.parse(localStorage.getItem('myCart')) || [];
+
+    // نشوف لو المنتج ده موجود أصلاً في السلة ولا لأ
+    let existingItem = cart.find(product => product.title === item.title);
+
+    if (existingItem) {
+        // لو موجود، نزود الكمية بس
+        existingItem.qty += item.qty;
+    } else {
+        // لو مش موجود، نضيفه للسلة
+        cart.push(item);
+    }
+
+    // نحفظ السلة في المتصفح تاني
+    localStorage.setItem('myCart', JSON.stringify(cart));
+
+    // نطلع رسالة للمستخدم
+    alert("Item added to cart successfully!");
+}
 }
